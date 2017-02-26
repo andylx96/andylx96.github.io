@@ -7,25 +7,18 @@ body {
 }
 
 
-.nav{
-    
-    
-    
+.nav{    
     background-color: #595959;
     color: #ffffff;
     list-style: none;
     text-align: center;
     padding: 20px 0 20px 0;
-    
-    
 }
     
     
 .nav > li {
-    
     display: inline-block;
     padding: 0 25px 0 25px;
-
 }
 
 .nav > li> a{
@@ -38,3 +31,51 @@ body {
     color: #c1c1c1;
     
 }
+
+h4{
+    color:red;
+    
+}
+
+.personalInfo{
+    color: royalblue
+    
+;}
+
+.downloadBox{
+    color: white;
+    font: bold 10px;
+    
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    float: left;
+    width: 200px;
+    
+    position: relative;
+    
+    background-image: url("https://s3.amazonaws.com/production-wordpress-assets/blog/wp-content/uploads/2016/12/05085250/java-logo.jpg");
+    background-size:cover;
+
+}
+
+.downloadInfo {
+     position: absolute;
+
+    left: 0;
+    width: 100%;
+    border: 1px solid #000000;
+    width: 200px;
+    word-wrap: break-word;
+    
+    text-align: center;
+    vertical-align:middle;
+    color: black;
+}
+
+.downloadImg{
+    
+    position: relative;
+    width: 200px;
+}
+
