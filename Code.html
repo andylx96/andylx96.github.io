@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta title="HTML" content="Basic HTML file">
+<title> Basic HTML
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+    
+    <body>
+        
+            <ul class="nav">
+            
+            <li><a href="index.html"> Home </a>     
+            </li><li><a href="h1.html"> Contact </a>   
+            </li><li><a href="h2.html"> Credentials </a>     
+            </li><li><a href="h3.html"> Projects </a>     
+            </li><li><a href="tables.html"> AccountTables </a>
+            </li><li><a href="images.html"> Image </a>     
+                            </li><li><a href="https://github.com/andylx96"> Github </a>
+            </li><li><a href="Code.html"> Code </a>
+            </li>
+            </ul>
+        <h1>Code</h1>
+        <h3>Raw Code Here</h3>
+     
+        
+        <table border="1">
+        <tr>
+    <td>Project</td>
+    <td>Class</td>
+    <td>Code</td>
+    </tr>
+    
+        <tr>
+    <td>Tri-Vial</td>
+    <td>App</td>
+    <td><p>public class App {
+<br>
+    <br>public static void main(String[] args) {
+        <br>NavModel model = new NavModel();
+        <br>NavView view = new NavView(model);
+<br>        NavController controller = new NavController(model, view);
+        
+    <br>    view.setVisible(true);
+        
+    }
+    
+}</p>   </td>
+    </tr>
+    
+    
+        <tr>
+    <td>Tri-Vial</td>
+    <td>CongrantsView</td>
+    <td>import java.awt.BorderLayout;
+<br>import java.awt.Color;
+<br>import java.awt.event.ActionListener;
+<br>import javax.swing.ImageIcon;
+<br>import javax.swing.JLabel;
+<br>import javax.swing.JPanel;
+<br>import javax.swing.JTextArea;
+<br>
+
+<br>public class CongratsView extends JPanel {
+
+    <br>JTextArea picture;
+    <br>JLabel congratsPicture;
+<br>    CongratsViewBottomPanel congratsBottom;
+    
+    <br>CongratsView(String name, int score, int totalTime) {
+        
+    <br>    congratsBottom = new CongratsViewBottomPanel(name, score, totalTime);
+        <br>picture = new JTextArea("Congradulations! \n\n * All questions on this level are finished!");
+        <br>congratsPicture = new JLabel(new ImageIcon("src/pkgfinal/Image/congrats.png"));
+<br>
+    <br>    setLayout(new BorderLayout());
+        
+        <br>setBackground(Color.RED);
+        <br>if(score > 10000){
+    <br>    setBackground(Color.GREEN);
+        <br>}
+        <br>add(picture, BorderLayout.NORTH);
+<br>        add(congratsPicture, BorderLayout.CENTER);
+    <br>    add(congratsBottom, BorderLayout.SOUTH);
+ 
+    <br>}
+
+
+<br>    public JLabel getCongratsButton() {
+    <br>    return congratsPicture;
+    <br>}
+
+    
+<br>    public JTextArea getPicture() {
+    <br>    return picture;
+    <br>}
+
+<br>    public void setPicture(JTextArea picture) {
+    <br>    this.picture = picture;
+<br>    }
+    
+<br>    public void setCongratsButton(JLabel CongratsButton) {
+    <br>    this.congratsPicture = CongratsButton;
+    <br>}
+
+}</td>
+    </tr>
+    
+    
+    
+        <tr>
+    <td>Tri-Vial</td>
+    <td>CongratsViewBottomPanel</td>
+    <td>import javax.swing.JLabel;
+<br>import javax.swing.JPanel;
+<br>public class CongratsViewBottomPanel extends JPanel {
+
+<br>    JLabel userScoreLabel;
+<br>    JLabel userNameLabel;
+<br>    JLabel timeLabel;
+
+<br>    public CongratsViewBottomPanel(String name, int score, int totalTime) {
+        
+<br>        super();
+<br>        userNameLabel = new JLabel(" Congrats " + name + ".");
+<br>        userScoreLabel = new JLabel("Your Total Score Was " + String.valueOf(score) + ".");
+<br>        timeLabel = new JLabel("Your Total Time Was " + String.valueOf(totalTime) + "s.");
+        
+<br>        add(userScoreLabel);
+<br>        add(userNameLabel);
+<br>        add(timeLabel);
+
+    }
+}</td>
+    </tr>
+    
+    
+    
+    
+    
+        </table>
+
+    
+    </body>
+      </html>
