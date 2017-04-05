@@ -60,7 +60,7 @@ var play = function(userChoice) {
 							wins++;
 							return "rope FTW";
 						} else {
-			\				return "error. bummer dude. game over. no dice.";
+							return "error. bummer dude. game over. no dice.";
 						}
 					};
 
@@ -82,9 +82,8 @@ var play = function(userChoice) {
 			};
 
 var reset = function() {
-alert("Hi");
-    //	loses = 0;
-//	wins = 0;
-//	document.getElementById("wins").innerHTML=wins;
-//	document.getElementById("loses").innerHTML=loses;
-};  
+	loses = 0;
+	wins = 0;
+	document.getElementById("wins").innerHTML=wins;
+	document.getElementById("loses").innerHTML=loses;
+};
